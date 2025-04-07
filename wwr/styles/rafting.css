@@ -1,0 +1,88 @@
+/* CSS Variables based on your color scheme */
+:root {
+          --primary-color: #505033;
+          --secondary-color: #264969;
+          --accent1-color: #CFCFB4;
+          --accent2-color: #B4CDE4;
+          --heading-font: 'Archivo Black', sans-serif;
+          --paragraph-font: 'Roboto', sans-serif;
+      }
+      
+      body {
+          font-family: var(--paragraph-font);
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+          font-family: var(--heading-font);
+          color: var(--primary-color);
+      }
+      
+      header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 20px;
+        align-items: center;
+        background-color: var(--secondary-color);
+      }
+      
+      nav a {
+          color: var(--accent2-color);
+          text-decoration:none;
+          padding: 10px;
+          font-weight: 700;
+          display: inline-block;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .hero {
+          position: relative;
+      }
+      
+      .hero img {
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+      
+      .hero h1 {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: white;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      
+      .hero article {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          width: 300px;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+      }
+      
+      .hero article img {
+          float: right;
+          width: 100px;
+          margin-left: 15px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: flex-end;
+      }
+      footer img {
+        width: 30px;
+        margin: 0 10px;
+      }
+      
+ 
